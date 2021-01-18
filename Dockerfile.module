@@ -1,0 +1,34 @@
+FROM                    "Specify the base image"  
+MAINTAINER              "Maintainer information" 
+
+RUN                     "run"
+CMD                     "Command executed when the container starts,each"
+                        "Dockerfile can only have one CMD command,      "
+                        "multiple CMD commands only execute the last one"
+
+EXPOSE                  "Expose the specified port number"
+ENV   [key] [value]     "Specify environment variables, which can be used "
+                        "by the RUN instruction later. After the container"
+                        " is running, these environment variables can also"
+                        " be obtained in the container"
+
+ADD   [src] [dest]      "Copy the files in SRC to the DEST directory of "
+                        "the container"
+COPY  [src] [dest]      "Copy the files in SRC to the DEST directory of "
+                        "the container"
+
+ENTRYPOINT              "Used to configure the command executed after the "
+                        "container is started"
+
+VOLUME                  "Create a data volume that can be mounted on the "
+                        "local host or other containers to store data    "
+
+USER                    "Specify the user name when the container is running"
+WORKDIR                 "Set the configuration working directory as "
+                        "RUN, CMD, ENTRYPOINT"
+ONBUILD                 "This configuration specifies the instructions to be"
+                        " executed when the created image is used as the base "
+                        "image of other newly created images"
+
+
+https://alpinelinux.org/downloads/
