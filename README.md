@@ -17,8 +17,8 @@ solve this problem before running docker. Not only solves this problem, you can 
 start docker in docker.
 ```
 docker run --privileged -it image:tag
-```
-    In addition, there is a way to solve this problem.
+```  
+In addition, there is a way to solve this problem.
 ```
 docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined
 ```
